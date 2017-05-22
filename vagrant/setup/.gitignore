@@ -1,5 +1,2 @@
-*
-!/.gitignore
-!/main
-!/personalize-example
-!/step
+/*-current-step.txt
+/*-log.txt
