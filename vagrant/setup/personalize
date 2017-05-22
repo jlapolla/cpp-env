@@ -14,7 +14,7 @@ dir=`dirname $0`
 # other files you wish to copy to the virtual machine.
 #
 step cp "$dir"/profile/.bashrc ~
-step cp "$dir"/profile/.gitconfig "$dir"/git/.gitignore_global ~
+step cp "$dir"/profile/.gitconfig "$dir"/profile/.gitignore_global ~
 step cp "$dir"/profile/.vimrc ~
 step git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 step_nolog vim +:PluginInstall +:qa
