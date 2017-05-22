@@ -1,0 +1,14 @@
+#!/usr/bin/env dash
+#
+# This is the main virtual machine provisioning script. It uses
+# functions defined in `step` to log all installation activities.
+
+dir=`dirname $0`
+. "$dir"/step
+
+# Run `personalize` script if present
+test -f "$dir"/personalize && "$dir"/personalize
+
+# Update system package index
+step sudo apt-get update
+
