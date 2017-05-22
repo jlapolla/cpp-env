@@ -58,6 +58,9 @@ au FileType cs setlocal foldmarker={,}
 " Remap zuz command from Konfekt/FastFold
 au FileType cs nmap zuz :set<Space>foldmethod=marker<CR><Plug>(FastFoldUpdate)
 
+" C++
+au Filetype cpp setlocal shiftwidth=4 softtabstop=4
+
 " Markdown
 au FileType md setlocal textwidth=72
 
