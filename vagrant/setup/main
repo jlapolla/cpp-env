@@ -12,3 +12,6 @@ test -f "$dir"/personalize && "$dir"/personalize
 # Update system package index
 step sudo apt-get update
 
+# Install Debian packages
+step sudo apt-get install -y g++
+
