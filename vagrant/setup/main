@@ -14,4 +14,5 @@ step sudo apt-get update
 
 # Install Debian packages
 step sudo apt-get install -y g++
+step sudo apt-get install -y libcppunit-dev
 
